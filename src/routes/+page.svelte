@@ -7,16 +7,17 @@
 	type Status = 'idle' | 'loading' | 'success' | 'error';
 
 	let theme: Theme = $state('light');
-	let status: Status = $state('idle');
+	let status: Status = $state('idle');    
+	let name = $state('BUNGA')                                                     
 </script>
 
-<div class="min-h-dvh bg-bg text-ink {theme === 'dark' ? 'dark' : ''}">
+<div class="min-h-dvh bg-bg text-ink bg-pink-200 {theme === 'dark' ? 'dark' : ''}">
 	<!-- nav -->
 	<header class="border-b border-line">
 		<div
 			class="mx-auto flex h-[60px] max-w-[1440px] items-center justify-between px-6 lg:h-[72px] lg:px-24"
 		>
-			<a href="/" class="text-[15px] font-semibold lg:text-base">nama.kamu</a>
+			<a href="/" class="text-[15px] font-semibold lg:text-base">{name}</a>
 
 			<div class="flex items-center gap-2 lg:gap-8">
 				<nav class="hidden items-center gap-7 lg:flex">
@@ -87,7 +88,7 @@
 		<h1
 			class="text-[62px] leading-[0.88] font-medium tracking-[-1.6px] lg:text-[232px] lg:tracking-[-9px]"
 		>
-			Nama Kamu
+			FLOWER
 		</h1>
 
 		<div class="mt-7 flex flex-col gap-6">
@@ -98,7 +99,7 @@
 			<div class="flex items-center gap-3">
 				<a
 					href="#proyek"
-					class="flex h-12 items-center bg-primary px-6 text-[15px] font-medium text-on-primary"
+					class="flex h-12 items-center bg-rose-400 px-6 text-[15px] font-medium text-on-primary"
 				>
 					Lihat proyek
 				</a>
